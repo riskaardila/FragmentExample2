@@ -8,19 +8,17 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <fragment
-        android:id="@+id/fragmentbooktitle"
-        android:name="com.example.fragmentexample.BookTitle"
+    <LinearLayout
+        android:id="@+id/fragtop"
         android:layout_width="match_parent"
-        android:layout_height="0px"
+        android:layout_height="match_parent"
         android:layout_weight="1"
-        tools:layout="@layout/book_title"/>
+        android:orientation="horizontal"/>
 
-    <fragment
-        android:id="@+id/fragmentbookdescription"
-        android:name="com.example.fragmentexample.BookDescription"
+    <LinearLayout
+        android:id="@+id/fragbottom"
         android:layout_width="match_parent"
-        android:layout_height="0px"
+        android:layout_height="match_parent"
         android:layout_weight="1"
-        tools:layout="@layout/book_description"/>
+        android:orientation="horizontal"/>
 </LinearLayout>
